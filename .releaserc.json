@@ -1,0 +1,96 @@
+{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    [
+      "semantic-release-gitmoji",
+      {
+        "releaseRules": {
+          "major": [
+            ":boom:",
+            ":building_construction:",
+            ":page_facing_up:",
+            ":tada:",
+            ":triangular_flag_on_post:"
+          ],
+          "minor": [
+            ":alien:",
+            ":arrow_up:",
+            ":arrow_down:",
+            ":bricks:",
+            ":fire:",
+            ":heavy_minus_sign:",
+            ":heavy_plus_sign:",
+            ":label:",
+            ":lock:",
+            ":passport_control:",
+            ":recycle:",
+            ":rocket:",
+            ":safety_vest:",
+            ":sparkles:",
+            ":thread:",
+            ":watebasket:"
+          ],
+          "patch": [
+            ":adhesive_bandage:",
+            ":alembic:",
+            ":ambulance:",
+            ":art:",
+            ":bento:",
+            ":bug:",
+            ":bulb:",
+            ":busts_in_silhouette:",
+            ":camera_flash:",
+            ":card_file_box:",
+            ":chart_with_upwards_trend:",
+            ":children_crossing:",
+            ":closed_lock_with_key:",
+            ":clown_face:",
+            ":coffin:",
+            ":consruction_worker:",
+            ":dizzy:",
+            ":egg:",
+            ":globe_with_meridians:",
+            ":goal_net:",
+            ":green_heart:",
+            ":hammer:",
+            ":iphone:",
+            ":lipstick:",
+            ":lock:",
+            ":loud_sound:",
+            ":mag:",
+            ":memo:",
+            ":money_with_wings:",
+            ":monocle_face:",
+            ":mute:",
+            ":package:",
+            ":pencil2:",
+            ":pushpin:",
+            ":rewind:",
+            ":rotating_light:",
+            ":seedling:",
+            ":speech_balloon:",
+            ":see_no_evil:",
+            ":technologist:",
+            ":test_tube:",
+            ":twisted_rightwards_arrows:",
+            ":white_check_mark:",
+            ":wheelchair:",
+            ":wrench:",
+            ":zap:"
+          ]
+        },
+        "issueResolution": {
+          "template": "{baseUrl}/{owner}/{repo}/issues/{ref}",
+          "baseUrl": "https://github.com",
+          "source": "github.com",
+          "removeFromCommit": false,
+          "regex": "/#\\d+/g"
+        }
+      }
+    ],
+    "@semantic-release/github",
+    "@semantic-release/npm"
+  ]
+}
