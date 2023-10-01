@@ -1,0 +1,6 @@
+coverage/
+dist/
+fixtures/
+node_modules/
+env.d.ts
+vitest.config.ts
